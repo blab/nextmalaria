@@ -1,0 +1,57 @@
+{
+  "build_url": "https://github.com/blab/nextmalaria",
+  "maintainers": [
+    {"name": "Cassia Wagner", "url": "https://github.com/cassiawag"}
+  ],
+  "colorings": [
+    {
+      "key": "division",
+      "title": "division",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "current_frequency",
+      "title": "Current frequency",
+      "type": "continuous"
+    },
+    {
+      "key": "study",
+      "title": "Study",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "division",
+    "country",
+    "region"
+  ],
+  "display_defaults": {
+    "color_by": "country",
+    "distance_measure": "num_date",
+    "geo_resolution": "country",
+    "map_triplicate": true,
+    "transmission_lines": false
+  },
+  "filters": [
+    "division",
+    "country",
+    "region",
+    "study"
+  ],
+  "panels": [
+    "tree",
+    "map",
+    "entropy",
+    "frequencies"
+  ]
+}

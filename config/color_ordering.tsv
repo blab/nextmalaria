@@ -1,0 +1,179 @@
+# Bangladesh
+division	Bandarban
+division	Ramu
+
+# Myanmar
+division	Bago
+division	Thabeikkyin
+division	Kawthaung
+division	Myitkyina
+division	Pyin Oo Lwin
+
+# Laos
+division	Attapeu
+division	Xepon
+
+# Thailand
+division	Mae Sot
+division	Sisakhet
+division	Ranong
+
+# Cambodia
+division	Pursat
+division	Ratanakiri
+division	Preah Vihear
+division	Pailin
+division	Tasanh
+
+# Vietnam
+division	Binh Phuoc
+division	Phuoc Long
+
+# Indonesia
+division	Timika
+
+# Papua New Guinea
+division	East Sepik
+division	Madang
+division	Milne Bay
+
+# Gambia
+division	Brikama
+division	Basse
+division	Njaiyel
+
+# Senegal
+division	Pikine
+
+# Guinea
+division	Nzerekore
+division	Faranah
+
+# Mauritania
+division	Nema
+division	Kobeni
+division	Selibaby
+division	Aioun
+
+# Côte d'Ivoire
+division	Abobo
+division	Yopougon
+division	Koumassi
+
+# Mali
+division	Bamako
+division	Faladje
+division	Nioro du Sahel
+division	Kolle
+division	Bandiagara
+
+# Burkina Faso
+division	Bobo-Dioulasso
+
+# Ghana
+division	Navrongo
+division	Cape-Coast
+division	Kintampo
+division	Ghana returning traveller
+
+# Benin
+division	Homel
+
+# Nigeria
+division	Bagdary
+division	Ilorin
+
+# Cameroon
+division	Buea
+
+# Democratic Republic of the Congo
+division	Kinshasa
+
+# Uganda
+division	Apac
+division	Uganda returning traveller
+
+# Malawi
+division	Chikwawa
+division	Zomba
+
+# Mozambique
+division	Mozambique returning traveller
+
+# Tanzania
+division	Mkuzi-Muheza
+division	Nachingwea
+division	Muleba
+division	Morogoro
+division	Muheza
+
+# Kenya
+division	Kilifi
+division	Kisumu
+division	Kombewa
+division	Kenya returning traveller
+
+# Ethiopia
+division	West Arsi Zone
+division	Shewa Robit Town Health Centre
+
+# Madagascar
+division	Maevatanana
+division	Antsohihy
+division	Farafangana
+
+# Peru
+division	Iquitos, Loreto Province
+division	Loreto
+
+# Colombia
+division	Tumaco
+division	Guapi
+division	Buenaventura
+division	Quibdo
+
+##################
+
+# Asia
+country	Bangladesh
+country	Myanmar
+country	Laos
+country	Thailand
+country	Cambodia
+country	Vietnam
+country	Indonesia
+
+# Oceania
+country	Papua New Guinea
+
+# Africa
+country	Gambia
+country	Senegal
+country	Guinea
+country	Mauritania
+country	Côte d'Ivoire
+country	Mali
+country	Burkina Faso
+country	Ghana
+country	Benin
+country	Nigeria
+country	Cameroon
+country	Democratic Republic of the Congo
+country	Uganda
+country	Malawi
+country	Mozambique
+country	Tanzania
+country	Kenya
+country	Ethiopia
+country	Madagascar
+
+# South America
+country	Peru
+country	Colombia
+
+################
+
+region	Asia
+region	Oceania
+region	Africa
+region	South America

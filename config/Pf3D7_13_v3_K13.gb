@@ -1,0 +1,126 @@
+LOCUS       XM_001350122            2181 bp    mRNA    linear   INV 06-MAY-2020
+DEFINITION  Plasmodium falciparum 3D7 kelch protein K13 (PF3D7_1343700),
+            partial mRNA.
+ACCESSION   XM_001350122
+VERSION     XM_001350122.1
+DBLINK      BioProject: PRJNA148
+            BioSample: SAMN00102897
+KEYWORDS    RefSeq.
+SOURCE      Plasmodium falciparum 3D7
+  ORGANISM  Plasmodium falciparum 3D7
+            Eukaryota; Sar; Alveolata; Apicomplexa; Aconoidasida; Haemosporida;
+            Plasmodiidae; Plasmodium; Plasmodium (Laverania).
+REFERENCE   1
+  AUTHORS   Harris,B., Lennard,N., Clark,L., Line,A., Barron,A., Corton,C.,
+            Berriman,M., Pain,A., Hall,N., Atkin,R., Chillingworth,C.,
+            Doggett,J., Ormond,D., Sanders,M., Hayes,R., Hall,S., Quail,M. and
+            Barrell,B.
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2181)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-MAY-2020) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3
+  CONSRTM   Pathogen Informatics
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JUN-2019) WTSI, Pathogen Informatics, Wellcome Trust
+            Sanger Institute, CB10 1SA, United Kingdom
+REFERENCE   4
+  AUTHORS   Aslett,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-MAR-2009) P.falciparum Genome Sequencing Consortium,
+            The Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus,
+            Hinxton, Cambridge CB10 1SA, UK
+REFERENCE   5
+  AUTHORS   Harris,B., Lennard,N., Clark,L., Line,A., Barron,A., Corton,C.,
+            Berriman,M., Pain,A., Hall,N., Atkin,R., Chillingworth,C.,
+            Doggett,J., Ormond,D., Sanders,M., Hayes,R., Hall,S., Quail,M. and
+            Barrell,B.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2002) P.falciparum Genome Sequencing Consortium,
+            The Welcome Trust Sanger Institute, Wellcome Trust Genome Campus,
+            Hinxton, Cambridge CB10 1SA, UK
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. This record is derived from an annotated genomic
+            sequence (NC_004331).
+            COMPLETENESS: incomplete on both ends.
+FEATURES             Location/Qualifiers
+     source          1..2181
+                     /organism="Plasmodium falciparum 3D7"
+                     /mol_type="mRNA"
+                     /isolate="3D7"
+                     /db_xref="taxon:36329"
+                     /chromosome="13"
+     gene            <1..>2181
+                     /locus_tag="Kelch-13"
+                     /db_xref="GeneID:814205"
+     CDS             1..2181
+                     /locus_tag="Kelch-13"
+                     /codon_start=1
+                     /product="kelch protein K13"
+                     /protein_id="XP_001350158.1"
+                     /db_xref="EnsemblGenomes-Gn:PF3D7_1343700"
+                     /db_xref="EnsemblGenomes-Tr:mRNA"
+                     /db_xref="EnsemblGenomes-Tr:PF13_0238"
+                     /db_xref="GeneID:814205"
+                     /db_xref="GOA:Q8IDQ2"
+                     /db_xref="InterPro:IPR000210"
+                     /db_xref="InterPro:IPR003131"
+                     /db_xref="InterPro:IPR006652"
+                     /db_xref="InterPro:IPR011333"
+                     /db_xref="InterPro:IPR015915"
+                     /db_xref="PDB:4ZGC"
+                     /db_xref="UniProtKB/TrEMBL:Q8IDQ2"
+                     /translation="MEGEKVKTKANSISNFSMTYDRESGGNSNSDDKSGSSSENDSNS
+                     FMNLTSDKNEKTENNSFLLNNSSYGNVKDSLLESIDMSVLDSNFDSKKDFLPSNLSRT
+                     FNNMSKDNIGNKYLNKLLNKKKDTITNENNNINHNNNNNNLTANNITNNLINNNMNSP
+                     SIMNTNKKENFLDAANLINDDSGLNNLKKFSTVNNVNDTYEKKIIETELSDASDFENM
+                     VGDLRITFINWLKKTQMNFIREKDKLFKDKKELEMERVRLYKELENRKNIEEQKLHDE
+                     RKKLDIDISNGYKQIKKEKEEHRKRFDEERLRFLQEIDKIKLVLYLEKEKYYQEYKNF
+                     ENDKKKIVDANIATETMIDINVGGAIFETSRHTLTQQKDSFIEKLLSGRHHVTRDKQG
+                     RIFLDRDSELFRIILNFLRNPLTIPIPKDLSESEALLKEAEFYGIKFLPFPLVFCIGG
+                     FDGVEYLNSMELLDISQQCWRMCTPMSTKKAYFGSAVLNNFLYVFGGNNYDYKALFET
+                     EVYDRLRDVWYVSSNLNIPRRNNCGVTSNGRIYCIGGYDGSSIIPNVEAYDHRMKAWV
+                     EVAPLNTPRSSAMCVAFDNKIYVIGGTNGERLNSIEVYEEKMNKWEQFPYALLEARSS
+                     GAAFNYLNQIYVVGGIDNEHNILDSVEQYQPFNKRWQFLNGVPEKKMNFGAATLSDSY
+                     IITGGENGEVLNSCHFFSPDTNEWQLGPSLLVPRFGHSVLIANI"
+ORIGIN
+        1 atggaaggag aaaaagtaaa aacaaaagca aatagtatct cgaatttttc tatgacgtat
+       61 gatagggaat ctggtggtaa cagcaatagt gatgataaaa gcggaagtag tagcgagaat
+      121 gattctaatt catttatgaa tctaactagt gataaaaatg agaaaacgga aaataatagt
+      181 ttccttttaa ataatagtag ttatggaaat gttaaagata gcctattaga atccattgat
+      241 atgagtgtat tagattcgaa ctttgatagt aaaaaagatt ttttaccaag taatttatca
+      301 agaacattta ataatatgtc taaagataat ataggaaata aatatttaaa taaattgtta
+      361 aataaaaaaa aagatactat tacaaatgaa aataataata ttaatcataa taataataat
+      421 aataatctga cagcaaataa tataactaat aatcttatta ataataatat gaattctcca
+      481 tcaattatga ataccaacaa aaaagagaat tttttagatg cagcaaatct tataaatgat
+      541 gattctggat taaacaattt aaaaaaattt tcaactgtaa ataatgtaaa tgatacttat
+      601 gaaaagaaaa ttattgaaac ggaattaagt gatgctagtg attttgaaaa tatggtaggt
+      661 gatttaagaa ttacatttat taattggtta aaaaagacac aaatgaattt tattcgagaa
+      721 aaagataaat tatttaaaga taagaaagaa ctagaaatgg aaagagtacg attgtacaaa
+      781 gaattagaaa accgtaaaaa tattgaagaa cagaaattac atgatgaaag aaagaaatta
+      841 gatattgata tatctaatgg ttataaacaa ataaaaaaag aaaaagaaga acataggaaa
+      901 cgatttgatg aagaaagatt aagattttta caagaaatcg ataaaattaa attagtatta
+      961 tatttagaaa aagaaaaata ttatcaagaa tataaaaatt ttgagaatga taaaaaaaaa
+     1021 attgttgatg caaatattgc tactgaaact atgattgata ttaatgttgg tggagctatt
+     1081 tttgaaacat ctagacatac cttaacacaa caaaaagatt catttataga gaaattatta
+     1141 agtggaagac atcatgtaac cagagataaa caaggaagaa tattcttaga tagggatagt
+     1201 gagttattta gaattatact taacttctta agaaatccgt taactatacc cataccaaaa
+     1261 gatttaagtg aaagtgaagc cttgttgaaa gaagcagaat tttatggtat taaattttta
+     1321 ccattcccat tagtattttg tataggtgga tttgatggtg tagaatattt aaattcgatg
+     1381 gaattattag atattagtca acaatgctgg cgtatgtgta cacctatgtc taccaaaaaa
+     1441 gcttattttg gaagtgctgt attgaataat ttcttatacg tttttggtgg taataactat
+     1501 gattataagg ctttatttga aactgaggtg tatgatcgtt taagagatgt atggtatgtt
+     1561 tcaagtaatt taaatatacc tagaagaaat aattgtggtg ttacgtcaaa tggtagaatt
+     1621 tattgtattg ggggatatga tggctcttct attataccga atgtagaagc atatgatcat
+     1681 cgtatgaaag catgggtaga ggtggcacct ttgaataccc ctagatcatc agctatgtgt
+     1741 gttgcttttg ataataaaat ttatgtcatt ggtggaacta atggtgagag attaaattct
+     1801 attgaagtat atgaagaaaa aatgaataaa tgggaacaat ttccatatgc cttattagaa
+     1861 gctagaagtt caggagcagc ttttaattac cttaatcaaa tatatgttgt tggaggtatt
+     1921 gataatgaac ataacatatt agattccgtt gaacaatatc aaccatttaa taaaagatgg
+     1981 caatttctaa atggtgtacc agagaaaaaa atgaattttg gagctgccac attgtcagat
+     2041 tcttatataa ttacaggagg agaaaatggc gaagttctaa attcatgtca tttcttttca
+     2101 ccagatacaa atgaatggca gcttggccca tctttattag ttcccagatt tggtcactcc
+     2161 gttttaatag caaatatata a
+//

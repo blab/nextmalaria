@@ -1,0 +1,15 @@
+name: nextstrain
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - augur
+  - auspice
+  - nextstrain-cli
+  - snakemake
+  - git
+  - pip
+  - samtools
+  - seqkit
+  - bcftools
