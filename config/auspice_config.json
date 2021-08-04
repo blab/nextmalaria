@@ -25,6 +25,11 @@
       "type": "continuous"
     },
     {
+      "key": "clade_membership",
+      "title": "Haplotype",
+      "type": "categorical"
+    },
+    {
       "key": "study",
       "title": "Study",
       "type": "categorical"
@@ -37,7 +42,7 @@
   ],
   "display_defaults": {
     "color_by": "country",
-    "distance_measure": "num_date",
+    "distance_measure": "div",
     "geo_resolution": "country",
     "map_triplicate": true,
     "transmission_lines": false
@@ -46,6 +51,7 @@
     "division",
     "country",
     "region",
+    "clade_membership",
     "study"
   ],
   "panels": [

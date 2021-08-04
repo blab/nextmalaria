@@ -3,6 +3,7 @@ Quirks:
 - had to give root metadata same columns as other metadata
 Extra:
 - clades
+- hide root
 - reorder colors
 - Change exclusion criteria
 - Change calling a snp criteria
@@ -257,14 +258,15 @@ rule refine:
             --metadata {input.metadata} \
             --output-tree {output.tree} \
             --output-node-data {output.node_data} \
-            --timetree \
-            --coalescent {params.coalescent} \
-            --date-confidence \
-            --date-inference {params.date_inference}  \
-            --clock-rate {params.clock_rate} \
-            --clock-std-dev {params.clock_std_dev} \
             --root {params.root}
         """
+
+        #--timetree \
+        #--coalescent {params.coalescent} \
+        #--date-confidence \
+        #--date-inference {params.date_inference}  \
+        #--clock-rate {params.clock_rate} \
+        #--clock-std-dev {params.clock_std_dev} \
         #--clock-filter-iqd {params.clock_filter_iqd}
 
 rule ancestral:
@@ -371,6 +373,24 @@ rule colors:
             --metadata {input.metadata}
         """
 
+rule clades:
+    message: "Assigning clades"
+    input:
+        tree = rules.refine.output.tree,
+        aa_muts = rules.translate.output.node_data,
+        nt_muts = rules.ancestral.output.node_data,
+        clades = files["clades"]
+    output:
+        clade_data = "results/clades_{gene}.json"
+    shell:
+        """
+        augur clades \
+            --tree {input.tree} \
+            --mutations {input.nt_muts} {input.aa_muts} \
+            --clades {input.clades} \
+            --output-node-date {output.clade_data}
+        """
+
 rule export:
     message: "Exporting data files for for auspice"
     input:
@@ -379,6 +399,7 @@ rule export:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
+        clades = rules.clades.output.clade_data,
         lat_longs = files["lat_longs"],
         colors = rules.colors.output.colors,
         auspice_config = files["auspice_config"],
@@ -392,7 +413,7 @@ rule export:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
             --colors {input.colors} \
             --auspice-config {input.auspice_config} \
             --title {params.title} \

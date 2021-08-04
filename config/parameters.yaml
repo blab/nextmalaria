@@ -8,6 +8,7 @@ files:
    lat_longs: "config/lat_longs.tsv"
    color_ordering: "config/color_ordering.tsv"
    color_schemes: "config/color_schemes.tsv"
+   clades: "config/clades.tsv"
    auspice_config: "config/auspice_config.json"
    description: "config/description.md"
 
