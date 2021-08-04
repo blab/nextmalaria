@@ -142,7 +142,7 @@ rule filter:
         sequences = "results/filtered_{gene}.fasta",
         metadata = "results/metadata_filtered_{gene}.tsv"
     params:
-        group_by = "year",
+        group_by = "year country",
         max_sequences = 300,
         min_length = 2000,
         query =  "--query '(QC_pass==True) & (Is_returning_traveller==False)'"
@@ -388,7 +388,7 @@ rule clades:
             --tree {input.tree} \
             --mutations {input.nt_muts} {input.aa_muts} \
             --clades {input.clades} \
-            --output-node-date {output.clade_data}
+            --output-node-data {output.clade_data}
         """
 
 rule export:
@@ -407,7 +407,7 @@ rule export:
     params:
         title = '"Plasmodium falciparum Kelch-13 phylogenetic analysis"'
     output:
-        auspice_json = "auspice/Pf_{gene}.json"
+        auspice_json = "results/Pf_{gene}.json"
     shell:
         """
         augur export v2 \
@@ -421,3 +421,17 @@ rule export:
             --include-root-sequence \
             --output {output.auspice_json}
         """
+
+rule hide_root:
+	message: "Hiding root"
+	input:
+		auspice_json = rules.export.output.auspice_json
+
+	output:
+		auspice_json = "auspice/Pf_{gene}.json"
+	shell:
+		"""
+		python scripts/hide_root.py \
+			--input {input.auspice_json} \
+			--output {output.auspice_json}
+		"""
